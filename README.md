@@ -94,73 +94,7 @@ The baseline showed strong discrimination on this particular test set. However, 
 
 Training accuracy approached 99.45%, while validation accuracy remained around 96.70% and validation loss increased slightly during continued training. This pattern suggests possible overfitting. Dropout regularisation was identified as a possible experiment, but no improvement should be claimed unless the modified model is trained and evaluated and the results are documented.
 
-## Suggested Project Structure
 
-Your actual files may be named differently; update this outline to match the repository.
-
-```text
-project/
-├── README.md
-├── requirements.txt
-├── notebooks/
-│   └── breast_cancer_ann.ipynb
-├── data/
-│   └── breast_cancer_wisconsin.csv
-└── outputs/
-    ├── evaluation_metrics.txt
-    ├── confusion_matrix.png
-    └── training_history.png
-```
-
-Do not commit private data, credentials, virtual environments, or large generated files unnecessarily. If the dataset is downloaded separately, follow the repository's terms and cite the dataset source.
-
-## Installation
-
-Use Python 3.9 or another Python version compatible with the TensorFlow version installed in your environment. TensorFlow compatibility varies by operating system and version, so check the official installation guide if installation fails.
-
-Create and activate a virtual environment:
-
-### Windows
-
-```bash
-python -m venv .venv
-.venv\Scripts\activate
-```
-
-### macOS/Linux
-
-```bash
-python -m venv .venv
-source .venv/bin/activate
-```
-
-Install the main dependencies:
-
-```bash
-python -m pip install --upgrade pip
-python -m pip install tensorflow pandas numpy scikit-learn matplotlib seaborn jupyter
-```
-
-If your notebook uses additional packages, include them in `requirements.txt`. For reproducibility, record the versions that worked in your environment, for example with:
-
-```bash
-python -m pip freeze > requirements.txt
-```
-
-## Running the Project
-
-1. Download the dataset from the UCI Machine Learning Repository.
-2. Place the CSV in the location expected by the notebook, or update the notebook's data path.
-3. Activate the environment and install the dependencies.
-4. Start Jupyter:
-
-   ```bash
-   jupyter notebook
-   ```
-
-5. Open the project notebook and run the cells in order.
-6. Confirm the preprocessing, training, evaluation metrics, and plots are generated.
-7. Record the final model configuration and results in the report.
 
 ## Responsible AI, Bias, and Fairness
 
@@ -188,8 +122,4 @@ OpenAI ChatGPT was used as a supporting learning and development tool for explan
 - UCI Machine Learning Repository. (n.d.). *Breast Cancer Wisconsin (Diagnostic)*. https://archive.ics.uci.edu/dataset/17/breast-cancer-wisconsin-diagnostic
 - World Health Organization. (2021). *Ethics and governance of artificial intelligence for health: WHO guidance*. https://www.who.int/publications/i/item/9789240029200
 
-## License and Disclaimer
 
-Add a license if you intend to publish or share the code. Dataset access and reuse are subject to the dataset repository's stated terms.
-
-This project is for educational and research purposes only. It has not been clinically validated and must not be used to diagnose, rule out, or treat cancer.
